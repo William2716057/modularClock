@@ -1,0 +1,3 @@
+C:\Users\Wills\source\repos\moduloClock\moduloClock\obj\Debug\moduloClock.njsproj.AssemblyReference.cache
+C:\Users\Wills\source\repos\moduloClock\moduloClock\obj\Debug\moduloClock.njsproj.CoreCompileInputs.cache
+C:\Users\Wills\source\repos\moduloClock\moduloClock\bin\Microsoft.NodejsTools.WebRole.dll

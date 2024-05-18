@@ -12,12 +12,12 @@ function drawClock() {
     const radius = canvas.width / 2;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Draw clock circle
+    //Draw clock circle
     ctx.beginPath();
     ctx.arc(radius, radius, radius - 10, 0, 2 * Math.PI);
     ctx.stroke();
 
-    // Draw clock numbers
+    //Draw numbers
     for (let i = 0; i < base; i++) {
         const angle = (i * 2 * Math.PI) / base - Math.PI / 2;
         const x = radius + (radius - 30) * Math.cos(angle);
@@ -25,16 +25,16 @@ function drawClock() {
         ctx.fillText(i, x, y);
     }
 
-    // Calculate modular result
+    //Calculate modular result
     const result = number % base;
     const resultAngle = (result * 2 * Math.PI) / base - Math.PI / 2;
     const resultX = radius + (radius - 60) * Math.cos(resultAngle);
     const resultY = radius + (radius - 60) * Math.sin(resultAngle);
 
-    // Draw result arrow
+    //Draw result arrow
     ctx.beginPath();
     ctx.moveTo(radius, radius);
     ctx.lineTo(resultX, resultY);
-    ctx.strokeStyle = "red";
+    ctx.strokeStyle = "black";
     ctx.stroke();
 }
